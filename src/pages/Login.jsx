@@ -13,7 +13,7 @@ function Login() {
 
 const handleSubmit= (e)=>{
        e.preventDefault();
-       axios.post('http://localhost:5000/login',{email,password})
+       axios.post('${window.location.origin}/login',{email,password})
        .then(result =>{ console.log(result)
        localStorage.setItem("authtoken",result.data.token)})
       .then(result => console.log(localStorage.getItem("authtoken")))
