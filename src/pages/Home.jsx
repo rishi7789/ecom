@@ -15,7 +15,7 @@ const [productcat,setProductcat] = useState([])
 const [productlist,setProductlist] = useState([])
 
 const loadData = async ()=>{
-    let response = await fetch("http://localhost:5000/product",{
+    let response = await fetch("${window.location.origin}/product",{
       method: "POST",
       headers :{
         "Content-Type": "application/json"
