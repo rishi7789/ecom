@@ -17,7 +17,7 @@ function Register() {
 
     const handleSubmit= (e)=>{
            e.preventDefault();
-           axios.post('http://localhost:5000/register',{name,email,phone,password})
+           axios.post('${window.location.origin}/register',{name,email,phone,password})
            .then(result => console.log(result))
            .then(result => alert("Registered successfully"))
            .then(result => navigate('/login'))
