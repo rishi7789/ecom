@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/56117e42-0355-4d50-a304-7735535fbd41/resourceGroups/rishi/providers/Microsoft.Web/sites/ecom-app",
+    "appService.deploySubpath": "."
+}
